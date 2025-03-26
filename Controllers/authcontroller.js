@@ -33,7 +33,7 @@ exports.SignUp = [
             errors: errors.array(),
         });
     }
-
+    // comment
     const {name, email, password} = req.body;
     try{
         const existingUser = await User.findOne({ email });
